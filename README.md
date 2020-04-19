@@ -11,7 +11,7 @@ Raspberry Pi 3以降ではCPUに64bitアーキテクチャーを採用してい�
 
 
 ## Rosetta@homeのアカウント作成
-次に、[**Rosetta@home**](http://boinc.bakerlab.org/rosetta/)に参加するためにアカウントを作成します。  
+次に、[Rosetta@home](http://boinc.bakerlab.org/rosetta/)に参加するためにアカウントを作成します。  
 リンクを開き、サインアップを行います。  
 
 ![image1.png](./images/image1.png)
@@ -91,7 +91,7 @@ boinccmd --get_state
 
 参加できている場合、下記のようなメッセージが現れます。  
 
-![image3.png](./images/image3png)
+![image3.png](./images/image3.png)
 
 
 
