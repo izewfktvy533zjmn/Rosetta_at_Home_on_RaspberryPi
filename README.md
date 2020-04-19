@@ -13,6 +13,7 @@ Raspberry Pi 3以降ではCPUに64bitアーキテクチャーを採用してい�
 ## Rosetta@homeのアカウント作成
 次に、[**Rosetta@home**](http://boinc.bakerlab.org/rosetta/)に参加するためにアカウントを作成します。  
 リンクを開き、サインアップを行います。  
+
 ![image1.png](./images/image1.png)
 
 必要事項を記入し、アカウント作成を完了させます。  
@@ -89,6 +90,7 @@ boinccmd --get_state
 ```
 
 参加できている場合、下記のようなメッセージが現れます。  
+
 ![image3.png](./images/image3png)
 
 
@@ -103,6 +105,7 @@ sudo systemctl status boinc-client.service
 ```
 
 下記の内容から動作に必要なデータやファイルをダウンロードし、合計5つのタスクを要求していることがわかります。  
+
 ![image4.png](./images/image4.png)
 
 タスクの実行が始まるまでしばらく待ってから、下記のコマンドを実行します。  
@@ -112,7 +115,9 @@ sudo systemctl status boinc-client.service
 ```
 
 下記の内容からタスクの実行が始まっていることがわかります。  
+
 ![image5.png](./images/image5.png)
+
 下記のコマンドを実行し、タスクの詳細を確認してみます。  
 
 ```
@@ -120,6 +125,7 @@ boinccmd --get_tasks
 ```
 
 実行結果より、一つのタスクが実行中であることが確認できました。  
+
 ![image6.png](./images/image6.png)
 
 
@@ -128,6 +134,7 @@ boinccmd --get_tasks
 
 ## 最後に
 **一つのタスクが完了するまでおおよそ7時間30分かかりました。**  
+
 ![Simage7.png](./images/image7.png)
 
 
