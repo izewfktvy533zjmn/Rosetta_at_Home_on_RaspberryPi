@@ -178,9 +178,12 @@ boinccmd --get_tasks
 ## 最後に
 **一つのタスクが完了するまでおおよそ7時間30分かかりました。**  
 
-Rosetta@homeのアカウントページの **"Preferences for this project"** から Rosetta@home preferences"** というリンクに飛び、**"Target CPU run time"** を変更することでタスクの完了にかかる時間を調整することができます。  
-
 ![Simage7.png](./images/image7.png)
+
+&nbsp;
+
+
+なお、Rosetta@homeのアカウントページの **"Preferences for this project"** から Rosetta@home preferences"** というリンクに飛び、**"Target CPU run time"** を変更することでタスクの完了にかかる時間を調整することができます。  
 
 &nbsp;
 
