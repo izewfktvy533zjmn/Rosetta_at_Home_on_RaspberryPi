@@ -183,7 +183,7 @@ boinccmd --get_tasks
 &nbsp;
 
 
-なお、Rosetta@homeのアカウントページの **"Preferences for this project"** から Rosetta@home preferences"** というリンクに飛び、**"Target CPU run time"** を変更することでタスクの完了にかかる時間を調整することができます。  
+なお、Rosetta@homeのアカウントページの **"Preferences for this project"** から **"Rosetta@home preferences"** というリンクに飛び、**"Target CPU run time"** を変更することでタスクの完了にかかる時間を調整することができます。  
 
 &nbsp;
 
