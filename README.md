@@ -4,7 +4,11 @@ Raspberry Pi 3以降ではCPUに64bitアーキテクチャーを採用してい�
 
 今回、**Rosetta@home** に参加するにあたって使用する分散コンピューティングプロジェクトのプラットフォームソフトウェアである **BOINC(Berkeley Open Infrastructure for Network Computing)** は64ビットOS上でしか動作しません。  
 
-まずはじめに、[公式ページ](https://www.raspberrypi.org/forums/viewtopic.php?t=250730)に従ってRaspberry Piを64ビットOSで作動させて下さい。
+まずはじめに、[公式ページ](https://www.raspberrypi.org/forums/viewtopic.php?t=250730)に従ってRaspberry Piを64ビットOSで作動させて下さい。  
+
+また、代替案としてOSに[Ubuntu](https://ubuntu.com/download/raspberry-pi)を使用することもできます。  
+
+&nbsp;
 
 
 
@@ -20,6 +24,8 @@ Raspberry Pi 3以降ではCPUに64bitアーキテクチャーを採用してい�
 
 ![image2.png](./images/image2.png)
 
+&nbsp;
+
 
 
 
@@ -30,6 +36,9 @@ Raspberry Pi 3以降ではCPUに64bitアーキテクチャーを採用してい�
 ```
 sudo apt install boinc-client
 ```
+
+&nbsp;
+
 
 次に、BOINCを稼働させるために設定を行います。  
 **"/var/lib/boinc-client/cc_config.xml"** ファイルを開き、下記の内容を反映させます。  
@@ -48,11 +57,16 @@ sudo apt install boinc-client
 </cc_config>
 ```
 
+&nbsp;
+
+
 設定ファイルの内容を反映させるために、下記のコマンドを実行します。  
 
 ```
 boinccmd --read_cc_config
 ```
+
+&nbsp;
 
 
 
@@ -66,6 +80,9 @@ boinccmd --read_cc_config
 boinccmd --lookup_account http://boinc.bakerlab.org/rosetta/ <your_email> <your_password>
 ```
 
+&nbsp;
+
+
 実行が終了すると、下記のようなメッセージが現れます。  
 
 ```
@@ -75,12 +92,16 @@ poll status: operation in progress
 account key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-上記で得られた **"account key"** の内容を引数として下記のコマンドを実行し、Rosetta@homeへの参加を完了させます。  
+&nbsp;
 
+上記で得られた **"account key"** の内容を引数として下記のコマンドを実行し、Rosetta@homeへの参加を完了させます。  
 
 ```
 boinccmd --project_attach http://boinc.bakerlab.org/rosetta/ <your_account_key>
 ```
+
+&nbsp;
+
 
 Rosetta@homeへ参加できているか確認します。  
 **数分待ってから**、下記のコマンドを実行して下さい。  
@@ -89,9 +110,14 @@ Rosetta@homeへ参加できているか確認します。
 boinccmd --get_state
 ```
 
+&nbsp;
+
+
 参加できている場合、下記のようなメッセージが現れます。  
 
 ![image3.png](./images/image3.png)
+
+&nbsp;
 
 
 
@@ -104,9 +130,15 @@ boinccmd --get_state
 sudo systemctl status boinc-client.service
 ```
 
+&nbsp;
+
+
 下記の内容から動作に必要なデータやファイルをダウンロードし、合計5つのタスクを要求していることがわかります。  
 
 ![image4.png](./images/image4.png)
+
+&nbsp;
+
 
 タスクの実行が始まるまでしばらく待ってから、下記のコマンドを実行します。  
 
@@ -114,9 +146,15 @@ sudo systemctl status boinc-client.service
 sudo systemctl status boinc-client.service
 ```
 
+&nbsp;
+
+
 下記の内容からタスクの実行が始まっていることがわかります。  
 
 ![image5.png](./images/image5.png)
+
+&nbsp;
+
 
 下記のコマンドを実行し、タスクの詳細を確認してみます。  
 
@@ -124,9 +162,14 @@ sudo systemctl status boinc-client.service
 boinccmd --get_tasks
 ```
 
+&nbsp;
+
+
 実行結果より、一つのタスクが実行中であることが確認できました。  
 
 ![image6.png](./images/image6.png)
+
+&nbsp;
 
 
 
@@ -135,7 +178,13 @@ boinccmd --get_tasks
 ## 最後に
 **一つのタスクが完了するまでおおよそ7時間30分かかりました。**  
 
+Rosetta@homeのアカウントページの **"Preferences for this project"** から Rosetta@home preferences"** というリンクに飛び、**"Target CPU run time"** を変更することでタスクの完了にかかる時間を調整することができます。  
+
 ![Simage7.png](./images/image7.png)
+
+&nbsp;
+
+
 
 
 
