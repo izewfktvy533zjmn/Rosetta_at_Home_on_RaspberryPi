@@ -178,7 +178,7 @@ boinccmd --get_tasks
 ## 最後に
 **一つのタスクが完了するまでおおよそ7時間30分かかりました。**  
 
-![Simage7.png](./images/image7.png)
+![image7.png](./images/image7.png)
 
 &nbsp;
 
