@@ -1,4 +1,4 @@
-# Raspberry PiでRosetta@homeプロジェクトに参加する
+# Raspberry PiでRosetta@homeに参加する
 ## はじめに
 Raspberry Pi 3以降ではCPUに64bitアーキテクチャーを採用しているため64ビットOSを作動させることができますが、オペレーティングシステムとして **Raspbian** を使用した場合、通常、32ビットOSとして作動します。  
 
